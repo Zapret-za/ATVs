@@ -55,7 +55,7 @@
                 <div class="discount_form">
                     <h4>ЗАМОВИТИ ДЗВІНОК</h4>
                     <p>Залишіть номер телефону та менеджер зв'яжеться з вами протягом <b>5ти хвилин</b></p>
-                    <form class="my-form" action="send.php" method="post">
+                    <form class="my-form" action="#" method="#">
                         <label for="phone">Введіть номер</label><br>
                         
                         <input id="phone" name="phone" type="text" placeholder="+380 (99) 999-99-99" required>
@@ -517,28 +517,6 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
-</script>
-<script type="text/javascript">
-    $('.my-form').submit(function(e){
-        e.preventDefault();
-        let th = $(this);
-        let mess = $('.mess');
-        let btn = th.find('.btn');
-        btn.addClass('progress-bar-striped progress-bar-animated');
-
-        $.ajax({
-            url: 'send.php',
-            type: 'POST',
-            data: th.serialize(),
-            success: function(){
-                btn.removeClass('progress-bar-striped progress-bar-animated');
-                mess.html('<div class="alert alert-success">Повідомлення відправлено!</div>');
-            },error: function(){
-                mess.html('<div class="alert alert-danger">Помилка відправки!</div>');
-                btn.removeClass('progress-bar-striped progress-bar-animated');
-            }
-        })
-    });
 </script>
 </body>
 </html>
