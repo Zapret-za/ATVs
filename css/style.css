@@ -305,7 +305,7 @@ ul, li, p, h1, h2, h3, h4, h5, h6 {
 @media (max-width: 992px) {
   .header .img-mobile {
     display: block;
-    background-image: url("/img/mobile_header.png");
+    background-image: url("../img/mobile_header.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
