@@ -866,7 +866,7 @@ body.lock{
             .w3-teal{
                 background-color: #1F1F1F!important;
                 .w-button{
-                    padding: 8px 6px;
+                    padding: 8px 18px;
                     color: #EEAF22;
                     font-size: 24px;
                     cursor: pointer;
@@ -1159,6 +1159,12 @@ body.lock{
                 margin-left: 26px;
                 padding: 10px 26px;
             }
+            @media(max-width: 560px){
+                margin-left: 34px;
+            }
+            @media(max-width: 380px){
+                margin-left: 16px;
+            }
             &:hover{
                 border: 2px solid #EEAF22;
                 background: transparent;
@@ -1233,6 +1239,9 @@ body.lock{
                         font-weight: bold;
                         font-size: 48px;
                         color: #EEAF22;
+                        @media(max-width: 500px){
+                            margin-top: 16px;
+                        }
                     }
                 }
                 .text{

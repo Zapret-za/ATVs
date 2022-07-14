@@ -1190,7 +1190,7 @@ ul, li, p, h1, h2, h3, h4, h5, h6 {
 }
 
 .modal_2 .w3-modal .w3-modal-content .w3-teal .w-button {
-  padding: 8px 6px;
+  padding: 8px 18px;
   color: #EEAF22;
   font-size: 24px;
   cursor: pointer;
@@ -1574,6 +1574,18 @@ ul, li, p, h1, h2, h3, h4, h5, h6 {
   }
 }
 
+@media (max-width: 560px) {
+  .discount .discount_form .button {
+    margin-left: 34px;
+  }
+}
+
+@media (max-width: 380px) {
+  .discount .discount_form .button {
+    margin-left: 16px;
+  }
+}
+
 .discount .discount_form .button:hover {
   border: 2px solid #EEAF22;
   background: transparent;
@@ -1684,6 +1696,12 @@ ul, li, p, h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   font-size: 48px;
   color: #EEAF22;
+}
+
+@media (max-width: 500px) {
+  .working .working_body .working__square .line .number p {
+    margin-top: 16px;
+  }
 }
 
 .working .working_body .working__square .line .text {
