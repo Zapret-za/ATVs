@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Позадорожні пригоди у Миколаївській області. Ви можете взяти квадроцикли на прокат, навчитися управлінню, а також приємно провести час у компанії друзів.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <title>Прокат квадроциклів</title>
+</head>
+<body>
+
+<header id="header" class="header">
+    <div class="container">
+        <div class="nav__header">
+            <div class="logo">
+                <a href="#header"><img src="img/logo_header.png" alt="logo"></a>
+            </div>
+            <div class="header__mobmenu">
+                <span></span>
+            </div>
+            <div class="header__item-nav">
+                <ul>
+                    <li><a href="#about">Про нас</a></li>
+                    <li><a href="#price">Ціна</a></li>
+                    <li><a href="#galereya">Галерея</a></li>
+                    <li><a href="#working">Як записатись?</a></li>
+                    <li><a href="#question">FAQ</a></li>
+                    <li><button onclick="document.getElementById('id01').style.display='block'" class="button"><div>Замовити дзвінок</div></button></li>
+                </ul>
+            </div>
+        </div>  
+        <div class="img-mobile"></div> 
+        <div data-aos="fade-right" class="column__header">
+            <h1>ПОЗАДОРОЖНІ ПРИГОДИ
+                У МИКОЛАЇВСЬКІЙ ОБЛАСТІ</h1>
+            <p>Ви можете взяти квадроцикли на прокат, навчитися управлінню, а також приємно провести час у компанії друзів</p>
+            <a class="button" href="#insteresting"><div>Дізнатись детальніше </div></a>
+        </div>
+    </div>
+</header>
+
+<div class="modal">
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+            <header class="w3-container w3-teal"> 
+                <span onclick="document.getElementById('id01').style.display='none'" class="w-button w3-display-topright">&times;</span>
+                <div class="discount_form">
+                    <h4>ЗАМОВИТИ ДЗВІНОК</h4>
+                    <p>Залишіть номер телефону та менеджер зв'яжеться з вами протягом <b>5ти хвилин</b></p>
+                    <form class="my-form">
+                        <label for="phone" >Введіть номер</label><br>
+                        
+                        <input id="phone" name="phone" type="text" placeholder="+380 (99) 999-99-99" pattern = "+[0-9]" required>
+                        <input type="submit" class="btn btn-warning" name="submit" value="Отримати дзвінок">
+                    </form>
+                    <div class="mess"></div>
+                </div>
+            </header>
+        </div>
+    </div>
+</div>
+
+<section id="about" class="about">
+    <div class="container">
+        <div class="about__body">
+            <div data-aos="fade-right" data-aos-delay="500" class="about__img">
+                <img class="img__deskop" src="img/2.png" alt="img">
+            </div>
+            <div data-aos="fade-right" data-aos-delay="300" class="about__title">
+                <div class="about__title-text">
+                    <h2><span class="counter" data-target="25">0</span>+</h2>
+                    <p>Кілометрів <b>спеціально підготовленої траси</b> з учасниками змінного рельєфу та різної складності</p>    
+                </div>
+                <div class="about__title-text">
+                    <h2><span class="counter" data-target="12">0</span></h2>
+                    <p><b>Нові квадроцикли</b>, які не підведуть вас, і підійдуть як новачкам, так і професіоналам</p>    
+                </div>
+                <div class="about__title-text">
+                    <h2><span class="counter" data-target="7">0</span></h2>
+                    <p><b>Програм позашляхових</b> пригод на вибір, від новачка до професіонала</p>    
+                </div>
+          </div>
+        </div>
+    </div>
+</section>
+
+<section id="insteresting" class="insteresting">
+    <div class="container">
+        <div class="insteresting__body">
+            <h2 data-aos="fade-up" data-aos-duration="1000">КОМУ ЦЕ БУДЕ ЦІКАВО</h2>
+
+            <div data-aos="fade-up" data-aos-duration="1000" class="tab">
+                <button class="tablinks active" onclick="openCity(event, 'one')"><div>Сім'ям із дітьми</div></button>
+                <button class="tablinks" onclick="openCity(event, 'two')"><div>Корпоративним командам</div></button>
+                <button class="tablinks" onclick="openCity(event, 'three')"><div>Любителям екстріму</div></button>
+            </div>
+
+            <div id="one" class="tabcontent" style="display: block;">
+                <div class="insteresting__header">
+                    <div data-aos="fade-right" data-aos-offset="300" class="insteresting__text">
+                        <div>
+                            <h4>Сім'ям із дітьми</h4>
+                            <p>Ми підготували спеціальну трасу та дитячі квадроцикли на 70 та 110 куб.см. З 6 років діти можуть їздити як пасажири, з 16 - самостійно керувати квадроцциклом.</p>
+                            <p>Зважаючи на складність маршута, за управління допускаються діти від 14 років, у виняткових випадках від 12 років у присутності батьків і лише на управління баггі.</p>
+                        </div>
+                    </div>
+                    <div data-aos="fade-right" data-aos-offset="300" class="insteresting__img">
+                        <img src="img/3.png" alt="img">
+                    </div>
+                </div>
+            </div>
+
+            <div id="two" class="tabcontent">
+                <div class="insteresting__header">
+                    <div data-aos="fade-right" data-aos-offset="300" class="insteresting__text">
+                        <div>
+                            <h4>Корпоративним<br> командам</h4>
+                            <p>Корпоративні заходи на квадроциклах – це відмінний інструмент мотивації персоналу Вашої компанії, невід'ємна частина корпоративної культури, яка слугує для формування лояльності працівників до компанії. Відносини між колегами відіграють найважливішу роль у роботі, адже лише з однодумцями та людьми, в яких ми впевнені, вдасться вирішити будь-яку робочу проблему.</p>
+                        </div>
+                    </div>
+                    <div data-aos="fade-right" data-aos-offset="300" class="insteresting__img">
+                        <img src="img/3_2.png" alt="img">
+                    </div>
+                </div>
+            </div>
+
+            <div id="three" class="tabcontent">
+                <div class="insteresting__header">
+                    <div data-aos="fade-right" data-aos-offset="300" class="insteresting__text">
+                        <div>
+                            <h4>Любителям екстріму</h4>
+                            <p>Любителям екстріму можна не розповідати про те, яке це задоволення – прокотитися на квадроциклі на швидкості, надихатись чистим повітрям та зарядитися енергією. А ось тих, хто ще сумнівається, ми готові переконати!</p>
+                            <p>У нас є траси різного рівня складності, так що не бійтеся і сміливо сідайте за кермо підкорювати свою. Ви відчуєте неймовірну свободу, насолодитеся гарною природою, повеселитеся з компанією.</p>
+                        </div>
+                    </div>
+                    <div data-aos="fade-right" data-aos-offset="300" class="insteresting__img">
+                        <img src="img/3_3.png" alt="img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="price" class="price">
+    <div class="container">
+        <div class="price__body">
+            <div class="price__title">
+                <h3 data-aos="fade-up" data-aos-duration="1000">ПРОГРАМИ
+                    І ЦІНИ</h3>
+                <p data-aos="fade-up" data-aos-duration="1000">Підберіть для себе оптимальну програму для відпочинку та нових емоцій, якщо не можете визначитися з вибором – <b>залиште заявку</b> та ми вас допоможемо.</p>
+            </div>
+            <div data-aos="fade-right" data-aos-offset="300" class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="price__header">
+                            <div class="price__img">
+                                <img src="img/price_1.png" alt="img">
+                            </div>
+                            <div class="price__text">
+                                <div>
+                                    <h4>Катання на квадроциклі</h4>
+                                    <p>Купити подарунковий сертифікат на катання на квадроциклі. Унікальні маршрути на природі та бездоріжжя. Відчуйте драйв, амплітуду потужності та чудову маневреність цього транспортного засобу</p>
+                                    <p>Тривалість: <b>60 минут</b></p>
+                                    <p><b>Цiна:</b> 1100грн</p>
+                                    <a onclick="document.getElementById('id02').style.display='block'" class="button" href="#id02"><div>Залишити заявку</div></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="price__header">
+                            <div class="price__img">
+                                <img src="img/price_22.png" alt="img">
+                            </div>
+                            <div class="price__text">
+                                <div>
+                                    <h4>Прогулка на квадроцикле</h4>
+                                    <p>Купити прогулянку на квадроциклі у Миколаєві. Насолоджуйтеся розміреним водінням та красою природи на околицях столиці. Яскраві емоції у подарунок, круті селфі та незабутній вихідний гарантовані.</p>
+                                    <p>Тривалість: <b>60 минут</b></p>
+                                    <p><b>Цiна:</b> 1200грн</p>
+                                    <a onclick="document.getElementById('id02').style.display='block'" class="button" href="#id02"><div>Залишити заявку</div></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="price__header">
+                            <div class="price__img">
+                                <img src="img/price_33.png" alt="img">
+                            </div>
+                            <div class="price__text">
+                                <div>
+                                    <h4>Прогулка на одном квадроцикле для двоих</h4>
+                                    <p>Вибираючи прогулянку на одному квадроциклі для двох, вдасться не лише випробувати себе, але й чудово провести час подалі від міської метушні, насолоджуючись природою та свіжим повітрям.
+                                    </p>
+                                    <p>Тривалість: <b>60 минут</b></p>
+                                    <p><b>Цiна:</b> 1800грн</p>
+                                    <a onclick="document.getElementById('id02').style.display='block'" class="button" href="#id02"><div>Залишити заявку</div></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="price__header">
+                            <div class="price__img">
+                                <img src="img/price.png" alt="img">
+                            </div>
+                            <div class="price__text">
+                                <div>
+                                    <h4>Катание на квадроциклах для двоих</h4>
+                                    <p>Привабливі ціни на катання на квадроциклах для двох. Активний відпочинок для пари. Вирушайте в незвичайну подорож, зарядіть адреналіном, підкорюйте найцікавіші маршрути разом.</p>
+                                    <p>Тривалість: <b>60 минут</b></p>
+                                    <p><b>Цiна:</b> 2100грн</p>
+                                    <a onclick="document.getElementById('id02').style.display='block'" class="button" href="#id02"><div>Залишити заявку</div></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="price__header">
+                            <div class="price__img">
+                                <img src="img/price_5.png" alt="img">
+                            </div>
+                            <div class="price__text">
+                                <div>
+                                    <h4>Прогулка на квадроциклах для двоих</h4>
+                                    <p>Прогулянка на квадроциклі для двох за зниженою ціною. Підйом мальовничою лісовою місцевістю з найкращим оглядом. Отримайте ні з чим незрівнянні враження, проведіть день у компанії друга чи дівчини.</p>
+                                    <p>Тривалість: <b>60 минут</b></p>
+                                    <p><b>Цiна:</b> 2400грн</p>
+                                    <a onclick="document.getElementById('id02').style.display='block'" class="button" href="#id02"><div>Залишити заявку</div></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="price__header">
+                            <div class="price__img">
+                                <img src="img/price_6.png" alt="img">
+                            </div>
+                            <div class="price__text">
+                                <div>
+                                    <h4>Сафари на квадроциклах для четверых</h4>
+                                    <p>Сафарі на квадроциклах для чотирьох найкрутішими трасами Київської області. Тисніть на газ, проривайтеся через перешкоди, вам підкориться будь-яка вершина. Замовляйте тур та насолоджуйтесь поїздкою разом із друзями.</p>
+                                    <p>Тривалість: <b>60 минут</b></p>
+                                    <p><b>Цiна:</b> 4800грн</p>
+                                    <a onclick="document.getElementById('id02').style.display='block'" class="button" href="#id02"><div>Залишити заявку</div></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="price__header">
+                            <div class="price__img">
+                                <img src="img/price_7.png" alt="img">
+                            </div>
+                            <div class="price__text">
+                                <div>
+                                    <h4>Пикник-тур на квадроцикле</h4>
+                                    <p>Пікнік тур - це унікальна можливість провести активний день з близькою людиною на природі, покататися з вітерцем на квадроциклі та смачно поїсти на свіжому повітрі. Така поїздка залишить лише приємні спогади та заряд чудового настрою.</p>
+                                    <p>Тривалість: <b>60 минут</b></p>
+                                    <p><b>Цiна:</b>6000грн</p>
+                                    <a onclick="document.getElementById('id02').style.display='block'" class="button" href="#id02"><div>Залишити заявку</div></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"><i class="fas fa-arrow-right"></i></div>
+                <div class="swiper-button-prev"><i class="fas fa-arrow-left"></i></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="modal_2">
+    <div id="id02" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+            <header class="w3-container w3-teal"> 
+                <span onclick="document.getElementById('id02').style.display='none'" class="w-button w3-display-topright">&times;</span>
+                <div class="discount_form">
+                    <h4><span>ЗАЯВКА</span></h4>
+                    <p>Залишіть заявку і менеджер зв'яжеться з вами протягом <b>5ти хвилин</b></p>
+                    <form>
+                        <label for="phone">Введите номер</label><br>
+                        <input id="phone" type="tel" placeholder="+38 (068) 237-00-00" name="phone" required>
+                        <input type="submit" class="btn btn-warning" name="submit" value="Отримати дзвінок">
+                    </form>
+                </div>
+            </header>
+        </div>
+    </div>
+</div>
+
+<section id="galereya" class="galereya">
+    <div class="container">
+        <div class="galereya_body">
+            <h2 data-aos="fade-up" data-aos-duration="1000">ГАЛЕРЕЯ</h2>
+
+            <div data-aos="fade-up" data-aos-duration="1000" class="tab">
+                <button class="tablinks_2 active" onclick="openGalereya(event, 'one_galereya')"><div>Фото відвідувачів</div></button>
+                <button class="tablinks_2" onclick="openGalereya(event, 'two_galereya')"><div>Позашляховий полігон</div></button>
+                <button class="tablinks_2" onclick="openGalereya(event, 'three_galereya')"><div>Заходи</div></button>
+            </div>
+
+            <div data-aos="fade-right" data-aos-offset="300" id="one_galereya" class="tabcontent_2" style="display: block;">
+                <div class="galereya_images">
+                    <div class="img_col1">
+                        <img src="img/5_1.png" alt="img">
+                    </div>
+                    <div class="img_col2">
+                        <div class="img_col2-1">
+                            <img src="img/5_2.png" alt="img">
+                        </div>
+                        <div class="img_col2-2">
+                            <img src="img/5_3.png" alt="img">
+                            <img src="img/5_4.png" alt="img">
+                            <img src="img/5_5.png" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div data-aos="fade-right" data-aos-offset="300" id="two_galereya" class="tabcontent_2" style="display: none;">
+                <div class="galereya_images">
+                    <div class="img_col1">
+                        <img src="img/5_1a.png" alt="img">
+                    </div>
+                    <div class="img_col2">
+                        <div class="img_col2-1">
+                            <img src="img/5_2a.png" alt="img">
+                        </div>
+                        <div class="img_col2-2">
+                            <img src="img/5_3a.png" alt="img">
+                            <img src="img/5_4a.png" alt="img">
+                            <img src="img//5_5a.png" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div data-aos="fade-right" data-aos-offset="300" id="three_galereya" class="tabcontent_2" style="display: none;">
+                <div class="galereya_images">
+                    <div class="img_col1">
+                        <img src="img/5_1b.png" alt="img">
+                    </div>
+                    <div class="img_col2">
+                        <div class="img_col2-1">
+                            <img src="img/5_2b.png" alt="img">
+                        </div>
+                        <div class="img_col2-2">
+                            <img src="img/5_3b.png" alt="img">
+                            <img src="img/5_4b.png" alt="img">
+                            <img src="img/5_5b.png" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="discount">
+    <div class="container">
+        <div data-aos="fade-right" data-aos-offset="300" class="discount_form">
+            <h4>ЗАПИШІТЬСЯ І ОТРИМАЙТЕ<span><br>ЗНИЖКУ 15%</span></h4>
+            <p>Залишіть заявку і менеджер зв'яжеться з вами протягом <b>5ти хвилин</b></p>
+            <form>
+                <label for="phone">Введіть номер</label><br>
+                <input id="phone" type="tel" placeholder="+38 (068) 237-80-00" name="phone" required>
+                <input type="submit" class="btn btn-warning" name="submit" value="Отримати дзвінок">
+            </form>
+        </div>
+    </div>
+</section>
+
+<section id="working" class="working">
+    <div class="container">
+        <h2 data-aos="fade-up" data-aos-duration="1000">ЯК МИ ПРАЦЮЄМО?</h2>
+        <div class="working_body">
+            <div class="working_img">
+                <img src="img/7.png" alt="img">
+            </div>
+            <div data-aos="fade-right" data-aos-offset="300" class="working__square">
+                <div class="line">
+                    <div class="number">
+                        <p>01</p>
+                    </div>
+                    <div class="text">
+                        <h5>Заявка</h5>
+                        <p>Залишіть <span><a href="#price">заявку на сайті</a></span>, або зателефонуйте за номером 380(68)237-00-00</p>
+                    </div>
+                </div>
+                <i class="fas fa-long-arrow-alt-down"></i>
+                <div class="line">
+                    <div class="number">
+                        <p>02</p>
+                    </div>
+                    <div class="text">
+                        <h5>Программа</h5>
+                        <p>Підберіть програму, що сподобалася, і зручний час для відвідування</p>
+                    </div>
+                </div>
+                <i class="fas fa-long-arrow-alt-down"></i>
+                <div class="line">
+                    <div class="number">
+                        <p>03</p>
+                    </div>
+                    <div class="text">
+                        <h5>Оплата</h5>
+                        <p>Виберіть тип оплати (ми приймаємо готівковий та безготівковий розрахунок)</p>
+                    </div>
+                </div>
+                <i class="fas fa-long-arrow-alt-down"></i>
+                <div class="line">
+                    <div class="number">
+                        <p>04</p>
+                    </div>
+                    <div class="text">
+                        <h5>Отримуйте емоції</h5>
+                        <p>Приїжджайте та отримуйте незабутні емоції на мальовничих маршутах</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="question" class="question">
+    <div class="container">
+        <h2 data-aos="fade-up" data-aos-duration="1000">ЧАСТІ ПИТАННЯ</h2>
+        <div data-aos="fade-right" data-aos-duration="300" class="question_body">
+            <div class="line">
+                <button class="accordion accord">Що рекомендується взяти із собою (змінний одяг, купальник, рюкзак…)?</button>
+                <div class="panel">
+                    <p>Залежить від погодних умов. Найголовніше — взяти з собою зручне взуття, що не промокається, і одяг, який можна одягти під квадроциклетний костюм.</p>
+                </div>
+            </div>
+
+            <div class="line">
+                <button class="accordion">На які дати можливий запис?</button>
+                <div class="panel">
+                    <p>Записуватись необхідно за 3-4 днів для чіткого формування групи. Сам пакет буде доступний з 1 вересня 2021 року.</p>
+                </div>
+            </div>
+
+            <div class="line">
+                <button class="accordion accord">Скільки часу триває програма? Скільки виїзд, повернення?</button>
+                <div class="panel">
+                    <p>Програма триває 60 хвилин.</p>
+                </div>
+            </div>
+
+            <div class="line">
+                <button class="accordion">Чи виключено у вартість перекушування?</button>
+                <div class="panel">
+                    <p>Ні. Продукти для пікніка ви привозите самі або окремо оплачуєте покупку продуктів.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__body">
+            <div class="footer_col">
+                <ul>
+                    <li><a href="#header"><img src="img/logo_header.png" alt="logo"></a></li>
+                    <li><a href="#about">Про нас</a></li>
+                    <li><a href="#price">Ціна</a></li>
+                    <li><a href="#galereya">Галерея</a></li>
+                    <li><a href="#working">Як записатись?</a></li>
+                    <li><a href="#question">FAQ</a></li>
+                    <li><a onclick="document.getElementById('id01').style.display='block'" class="button" href="#footer"><div> Замовити дзвінок</div></a></li>
+                </ul>
+            </div>
+            <div class="footer_col-768px">
+                <div class="img">
+                    <img src="img/logo_header.png" alt="logo">
+                </div>
+            </div>
+            <div class="footer_col-center">
+                <p>Ми у соцмережах:</p>
+                <div class="group_button">
+                    <a class="button" href="https://web.telegram.org/k/" target="_blank"><div>Telegram</div></a>
+                    <a class="button" href="https://www.instagram.com/" target="_blank"><div>Instagram</div></a>
+                    <a class="button" href="https://www.viber.com/ru/" target="_blank"><div>Viber</div></a>
+                </div>
+            </div>
+            <div class="footer_col">
+                <p>Контактний телефон:</p>
+                <p class="big">+38 (068) 237-00-00</p>
+                <p>Де ми знаходимося:</p>
+                <p class="big">м.Миколаїв, вул. Гагаріна, №23-А</p>
+            </div>
+        </div>
+        <p class="end">	&#169; 2022р. - Всі права захищені</p>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="https://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init();
+
+$(document).ready(function() {
+    $('.header__mobmenu').click(function() {
+        $('.header__mobmenu, .header__item-nav').toggleClass('active');
+        $('body').toggleClass('lock');
+    });
+
+    $('.header__item-nav a').click(function() {
+        $('.header__item-nav').removeClass('active');
+        $('.header__mobmenu').removeClass('active');
+        $('body').removeClass('lock');
+    });
+});
+
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+
+var swiper = new Swiper(".mySwiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+
+function openGalereya(evt, galereyaName) {
+  var j, tabcontent_2, tablinks_2;
+  tabcontent_2 = document.getElementsByClassName("tabcontent_2");
+  for (j = 0; j < tabcontent_2.length; j++) {
+    tabcontent_2[j].style.display = "none";
+  }
+  tablinks_2 = document.getElementsByClassName("tablinks_2");
+  for (j = 0; j < tablinks_2.length; j++) {
+    tablinks_2[j].className = tablinks_2[j].className.replace(" active", "");
+  }
+  document.getElementById(galereyaName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+
+
+const counters = document.querySelectorAll('.counter');
+const callback = (entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const target = +entry.target.getAttribute('data-target');
+      let count = 0;
+      
+      const animateValue = timestamp => {
+        const progress = timestamp - startTime;
+        const duration = 1200;
+        const value = Math.floor(progress / duration * (target - count) + count);
+        entry.target.innerHTML = value;
+        
+        if (progress < duration) {
+          requestAnimationFrame(animateValue);
+        }
+      };
+      
+      const startTime = performance.now();
+      requestAnimationFrame(animateValue);
+      
+      observer.unobserve(entry.target);
+    }
+  });
+};
+const observer = new IntersectionObserver(callback, {
+  threshold: 0.5
+});
+counters.forEach(counter => {
+  observer.observe(counter);
+});
+
+</script>
+</body>
+</html>
